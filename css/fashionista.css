@@ -2,6 +2,34 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/* ------------------------------------------------------------------- 
+ * ## display headings
+ * ------------------------------------------------------------------- */
+ .display-1 {
+    font-family: "IBM Plex Serif", serif;
+    /* font-weight: 600;
+    font-size: 6rem; */
+    line-height: 1.2;
+    letter-spacing: -0.03rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.display-2 {
+    font-family: "IBM Plex Serif", serif;
+    /* font-weight: 600;
+    font-size: 4.5rem; */
+    line-height: 1.244;
+    margin-top: 0;
+}
+
+.subhead {
+    margin-top: 0;
+    /* color: #7E5842; */
+    font-size: 2.4rem;
+    line-height: 1.1667;
+}
+/***********************************************************************/
 
 .mbsc-page * {
     box-sizing: unset;
@@ -11,3 +39,10 @@
 .cen{
     text-align:center;
 }
+
+.resp {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
