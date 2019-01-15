@@ -1,7 +1,9 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width = device-width, initial-scale = 1, charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+        
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -37,7 +39,6 @@
             </div>
             <div class="ui-grid-solo">
                 <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-location" href="#nearest-event-page">
-                <i class="fa fa-map-marker fa-2x"></i>
                 View Events near me</a>
             </div>
 
@@ -153,7 +154,7 @@
                 </div>
 
                 <div class="ui-grid-solo">
-                    <a class="ui-btn ui-corner-all btn btn--primary btn--medium" href="#booking-page">
+                    <a class="ui-btn ui-shadow ui-corner-all" href="#booking-page">
                         Buy Tickets</a>
                 </div>
             </div>
@@ -205,26 +206,53 @@
             
                     <div id="booking">
             
-                        <div class="mbsc-form-group">
-                            <label>
-                                No of Tickets
-                                <input type="number" data-role="stepper" max="5" data-val="left" />
-                            </label>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <label>No of Tickets </label>
+                            </div>
+                            <div class="ui-block-b">
+                                <input type="number" value="1" max="10" data-val="left" />
+                            </div>
                         </div>
-                        <div class="mbsc-form-group">
-                            <label><b>Total</b></label>
-                            <label>$50</label>
-                            <label>Coupon code
-                                <input type="text" max="10" data-val="left"/></label> 
-                            </label>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <label><b>Total</b></label>
+                            </div>
+                            <div class="ui-block-b">
+                                <label class="right">$50</label>
+                            </div>
+                        </div>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <label>Coupon code</label>
+                            </div>
+                            <div class="ui-block-b">
+                                <input type="text" max="10" data-val="left"/> 
+                            </div>
+                        </div>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <label>Discounted Amount</label>
+                            </div>
+                            <div class="ui-block-b">
+                                <label class="right">$0.0</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <label><strong>Total Amount</strong></label>
+                            </div>
+                            <div class="ui-block-b">
+                                <label class="right"><strong>$50.00</strong></label>
+                            </div>
                         </div>
                     </div>
             
-                    <div class="row page-header--small">
-                        <div class="col-full">
-                            <a class="ui-btn ui-corner-all btn btn--primary btn--medium" href="sign_in.html" rel="external">
-                                Buy Tickets</a></div>
-                        </div>
+                    <br><br>
+                    <div class="ui-grid-solo">
+                        <label><i>Please select payment options</i></label>
+                        <img alt="payment" src="../images/payment.jpg"></a>
                     </div>
                 </div>
                 
