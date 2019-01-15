@@ -45,6 +45,9 @@
     text-align:right;
     width:30px;
 }
+.right{
+    text-align:right;
+}
 .resp {
     max-width: 100%;
     height: auto;
