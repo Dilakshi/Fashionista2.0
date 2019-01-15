@@ -63,3 +63,8 @@
     border: ridge;
     background-color:white;
 }
+
+.darkbg{
+    background-color:#011931;
+    color:#ffffff;
+}
