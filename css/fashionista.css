@@ -48,5 +48,10 @@
 .resp {
     max-width: 100%;
     height: auto;
-  }
+}
+
+.sidepadding{
+    padding-right:5px;
+    padding-left:5px
+}
 
