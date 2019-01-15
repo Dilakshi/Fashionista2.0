@@ -57,7 +57,7 @@
             <!-- user login form -->
             <div class="row page-header--small">
                 <div class="col-full">
-                    <div data-role="page" id="city" class="demo-page" data-dom-cache="true" data-theme="b" data-prev="prevCity" data-next="nextCity" data-url="city">
+                    <div data-role="page" id="city" class="login-page" data-dom-cache="true" data-theme="b" data-prev="prevCity" data-next="nextCity" data-url="city">
                         <div role="main" class="ui-content">
                             <div id="trivia-city" class="trivia ui-content" data-role="popup" data-position-to="window" data-tolerance="50,30,30,30" data-theme="a">
                                 <a href="#" data-rel="back" class="ui-btn ui-btn-right ui-btn-b ui-btn-icon-notext ui-icon-delete ui-corner-all">Close</a>
@@ -109,26 +109,5 @@
 
 </div>
 
-<script>
-    mobiscroll.settings = {
-        theme: 'ios',
-        lang: 'en'
-    };
-
-    $(function () {
-    
-        var inst = $('#demo-event-popover').mobiscroll().eventcalendar({
-            lang: 'en',  // Specify language like: lang: 'pl' or omit setting to use default
-            theme: 'ios-dark',              // Specify theme like: theme: 'ios' or omit setting to use default
-            display: 'inline',          // Specify display mode like: display: 'bottom' or omit setting to use default
-            touchUi: true
-        }).mobiscroll('getInst');
-    
-        mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', function (events) {
-            inst.setEvents(events);
-        }, 'jsonp');
-    
-    });
-</script>
 
 </body>

@@ -3,9 +3,9 @@
 <head>
     <title>My Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/fashion.css" />
-    <link rel="stylesheet" href="styles/fashion.min.css" />
-    <link rel="stylesheet" href="styles/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/fashion.css" />
+    <link rel="stylesheet" href="css/fashion.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="controler.js"></script>
@@ -899,15 +899,16 @@
 </div>
 <div data-role="page" id="map1" data-theme="d">
 
-    <div data-role="header">
-        <h1>Google map</h1>
-    </div>
-    <div data-role="navbar">
-        <ul>
-            <li><a href="#newsList" data-transition="slidedown">News Feed</a> </li>
-            <li><a href="#favListView" data-transition="slidedown">Favourites</a> </li>
-            <li><a href="#poi" data-transition="slidedown" >Nearby POI</a> </li>
-        </ul>
+    <div data-role="header" style="background-color:#011931;">
+        <h1 style="width: auto">
+            <a class="site-logo" href="index.html" style="width:100%">
+                <img src="images/logo_text.png" alt="Homepage" style="width: 100%">
+            </a>
+        </h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+        <div data-role="navbar"><ul> <li><a href="#newsList" data-transition="slidedown">News Feed</a> </li>
+            <li><a href="#favListView" data-transition="slidedown" >My Favourites</a> </li>
+            <li><a href="#poi" data-transition="slidedown" >Nearby POI</a> </li></ul></div>
     </div>
     <div role="main" class="ui-content">
         <div id="map"></div>
