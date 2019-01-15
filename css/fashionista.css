@@ -68,7 +68,12 @@
     background-color:#011931;
     color:#ffffff;
 }
-
+.ui-btn-near-events{
+    background-color: white !important;
+    border-color: #011931 !important;
+    color: #011931 !important;
+    align-content: center !important;
+}
 .darkbg{
     background-color:#011931 !important;
     color:#ffffff !important;
