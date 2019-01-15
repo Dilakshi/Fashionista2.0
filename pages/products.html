@@ -16,7 +16,7 @@
 
 <body>
     <div data-role="page" id="ourteam" data-url="ourteam">
-        <div data-role="header">
+        <div data-role="header" class="darkbg">
             <h1>Fashionista</h1>
             <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
         </div>
@@ -24,62 +24,64 @@
             <div class="card">
                 <div class="card-image">
                     <img alt="home" src="../images/gallery/Spring_5.jpg" />
-                    <a href="../pages/mycart.html"><h2 style="text-align:center">Add To Cart</h2></a>
+                    <a href="pages/mycart.html" rel="external">
+                        <h2 style="text-align:center">Add To Cart</h2>
+                    </a>
                 </div>
             </div>
             <div class="card">`
                 <div class="card-image">
                     <img alt="home" src="../images/gallery/Spring_5.jpg" />
-                    <a href="../pages/mycart.html"><h2 style="text-align:center">Add To Cart</h2></a>
+                    <a href="mycart.html" rel="external">
+                        <h2 style="text-align:center">Add To Cart</h2>
+                    </a>
                 </div>
             </div>
             <div class="card">`
                 <div class="card-image">
                     <img alt="home" src="../images/gallery/Spring_5.jpg" />
-                    <a href="../pages/mycart.html"><h2 style="text-align:center">Add To Cart</h2></a>
+                    <a href="mycart.html" rel="external">
+                        <h2 style="text-align:center">Add To Cart</h2>
+                    </a>
                 </div>
             </div>
         </div>
 
         <!-- Menu-->
-        <div data-role="panel" id="left-panel">
+        <div data-role="panel" id="left-panel" class="darkbg">
             <ul data-role="listview">
-                <li data-icon="delete"><a href="#" data-rel="close" style="height:20"></a></li>
-                <!-- <li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li> -->
-                <li data-icon="calendar"><a href="#demo-intro" data-rel="back">Events</a></li>
-                <!-- <li data-icon="camera"><a href="#demo-intro" data-rel="back">Gallery</a></li>
-                <li data-icon="bullets"><a href="#demo-intro" data-rel="back">Designers</a></li>
-                <li data-icon="bars"><a href="#demo-intro" data-rel="back">News Feed</a></li> -->
-                <li data-icon="shop"><a href="#demo-intro" data-rel="back">Products</a></li>
-                <li data-icon="tag"><a href="#demo-intro" data-rel="back">Sponsers</a></li>
-                <li data-icon="info"><a href="#demo-intro" data-rel="back">FAQ</a></li>
+                <li data-icon="delete">
+                    <a class="darkbg" href="../index.html">FASHIONISTA</a></li>
+                <li data-icon="calendar">
+                    <a class="darkbg" href="event.html">Events</a></li>
+                <li data-icon="shop">
+                    <a class="darkbg" href="products.html">Products</a></li>
+                <li data-icon="tag">
+                    <a class="darkbg" href="sponsers.html">Sponsers</a></li>
+                <li data-icon="info">
+                    <a class="darkbg" href="#">FAQ</a></li>
 
                 <li data-role="list-divider">About</li>
-                <li data-icon="user"><a href="ourteam.html" data-rel="back">Who we are</a></li>
-                <li data-icon="phone"><a href="contactus.html" data-rel="back">Contact Us</a></li>
+                <li data-icon="user">
+                    <a class="darkbg" href="ourteam.html">Who we are</a></li>
+                <li data-icon="phone">
+                    <a class="darkbg" href="contactus.html">Contact Us</a></li>
 
                 <li data-role="list-divider">My Account</li>
-                <li data-icon="user"><a href="#demo-intro" data-rel="back">Login / Signup</a></li>
-                <li data-role="collapsible" data-inset="false" data-iconpos="right">
-                    <h3>Favourites</h3>
+                <li data-icon="user">
+                    <a class="darkbg" href="sign_in.html">Login / Signup</a></li>
+                <li data-role="collapsible" data-inset="false" data-iconpos="right" class="darkbg">
+                    <h3 class="darkbg">Favourites</h3>
                     <ul data-role="listview">
-                        <li><a href="#">My Designers</a></li>
-                        <li><a href="#">My Products</a></li>
-                        <li><a href="#">My Events</a></li>
+                        <li><a href="#" class="darkbg">My Designers</a></li>
+                        <li><a href="#" class="darkbg">My Products</a></li>
+                        <li><a href="#" class="darkbg">My Events</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <div data-role="panel" id="right-panel" data-display="overlay" data-position="right">
-            <ul data-role="listview" data-icon="false">
-                <li data-icon="delete"><a href="#" data-rel="close">Close</a></li>
-                <li data-role="list-divider">Share this page</li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Google +</a></li>
-                <li><a href="#">Mail</a></li>
-            </ul>
+        <div data-role="footer" class="darkbg">
+            <h4>© tEaM FlAshMoB</h4>
         </div>
-
     </div>
 </body>
