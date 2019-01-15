@@ -14,28 +14,23 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fashionista.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     
     <!-- script
     ================================================== -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="../css/fashionista.css">
     
-    <!-- Mobiscroll JS and CSS Includes -->
-    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
-    <script src="js/mobiscroll.jquery.min.js"></script>
-
 </head>
 
 <body>
 
     <div data-role="page" >
-        <div data-role="header" style="background-color:#062151;">
+        <div data-role="header" class="darkbg">
             <h1 style="width: auto"> 
                 <a class="site-logo" href="../index.html" rel="external" style="width:100%">
                     <img src="../images/logo_text.png" alt="Homepage" style="width: 100%">
@@ -91,61 +86,39 @@
 
         
         <!-- Menu-->
-        <div data-role="panel" id="left-panel" style="background-color:#062151;">
+        <div data-role="panel" id="left-panel" class="darkbg">
             <ul data-role="listview">
                 <li data-icon="delete">
-                    <a style="background-color:#062151;color: white;" href="#" data-rel="close">FASHIONISTA</a></li>
+                    <a class="darkbg" href="../index.html" data-rel="close">FASHIONISTA</a></li>
                 <li data-icon="calendar">
-                    <a  style="background-color:#062151;color: white;"  href="event.html" data-rel="back">Events</a></li>
+                    <a class="darkbg" href="event.html" data-rel="back">Events</a></li>
                 <li data-icon="shop">
-                    <a style="background-color:#062151;color: white;"  href="products.html" data-rel="back">Products</a></li>
+                    <a class="darkbg" href="products.html" data-rel="back">Products</a></li>
                 <li data-icon="tag">
-                    <a style="background-color:#062151;color: white;"  href="sponsers.html" data-rel="back">Sponsers</a></li>
+                    <a class="darkbg" href="sponsers.html" data-rel="back">Sponsers</a></li>
                 <li data-icon="info">
-                    <a style="background-color:#062151;color: white;"  href="#" data-rel="back">FAQ</a></li>
+                    <a class="darkbg" href="#" data-rel="back">FAQ</a></li>
                 
-                <li data-role="list-divider" style="color:#062151;background-color: white;">About</li>
+                <li data-role="list-divider">About</li>
                 <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="ourteam.html" data-rel="back">Who we are</a></li>
+                    <a class="darkbg"  href="ourteam.html" data-rel="back">Who we are</a></li>
                 <li data-icon="phone">
-                    <a style="background-color:#062151;color: white;"  href="contactus.html" data-rel="back">Contact Us</a></li>
+                    <a class="darkbg"  href="contactus.html" data-rel="back">Contact Us</a></li>
                 
-                <li data-role="list-divider" style="color:#062151;background-color: white;">My Account</li>
+                <li data-role="list-divider">My Account</li>
                 <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Login / Signup</a></li>
-                <li data-role="collapsible" data-inset="false" data-iconpos="right" >
-                    <h3 style="color:#062151;background-color: white;">Favourites</h3>
+                    <a class="darkbg"  href="sign_in.html" data-rel="back">Login / Signup</a></li>
+                <li data-role="collapsible" data-inset="false" data-iconpos="right" class="darkbg">
+                    <h3 class="darkbg">Favourites</h3>
                     <ul data-role="listview">
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Designers</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Products</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Events</a></li>
+                        <li><a href="#" class="darkbg">My Designers</a></li>
+                        <li><a href="#" class="darkbg">My Products</a></li>
+                        <li><a href="#" class="darkbg">My Events</a></li>
                     </ul>
                 </li>
             </ul>
         </div>    
     </div>
-    
-    <script>
-        mobiscroll.settings = {
-            theme: 'ios',
-            lang: 'en'
-        };
-    
-        $(function () {
-        
-            var inst = $('#demo-event-popover').mobiscroll().eventcalendar({
-                lang: 'en',  // Specify language like: lang: 'pl' or omit setting to use default
-                theme: 'ios-dark',              // Specify theme like: theme: 'ios' or omit setting to use default
-                display: 'inline',          // Specify display mode like: display: 'bottom' or omit setting to use default
-                touchUi: true
-            }).mobiscroll('getInst');
-        
-            mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', function (events) {
-                inst.setEvents(events);
-            }, 'jsonp');
-        
-        });
-    </script>
     
 </body>
     
