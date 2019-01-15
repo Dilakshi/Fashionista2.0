@@ -3,45 +3,44 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fashionista.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fashionista.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>   
     
     <!-- Mobiscroll JS and CSS Includes -->
-    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
-    <script src="js/mobiscroll.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/mobiscroll.jquery.min.css">
+    <script src="../js/mobiscroll.jquery.min.js"></script>
+
 
 </head>
 
 <body>
-    <div data-role="page" id="event-calendar-page" >
+    <div data-role="page" id="event-calendar-page">
         <div data-role="header">
             <h1 style="width: auto"> 
                 <a class="site-logo" href="index.html" style="width:100%">
-                    <img src="images/logo_text.png" alt="Homepage" style="width: 100%">
+                    <img src="../images/logo_text.png" alt="Homepage" style="width: 100%">
                 </a>
             </h1>
             <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
         </div>
         <div role="main" class="ui-content">
-            <div class="article">
-                <h1 class="display-1">
-                    Event Calendar
-                </h1>
-                <div mbsc-page class="demo-event-popover">
-                    <div id="demo-event-popover"></div>
-                </div>
-                <div class="ui-grid-solo">
-                    <a class="ui-btn ui-corner-all btn btn--primary btn--medium" href="#nearest-events.html">
-                    <i class="fa fa-map-marker fa-2x"></i>
-                    View Events near me</a>
-                </div>
-            </div> 
+            
+            <h1 class="cen">Event Calendar</h1>
+            <div mbsc-page class="demo-event-popover">
+                <div id="demo-event-popover"></div>
+            </div>
+            <div class="ui-grid-solo">
+                <a class="ui-btn ui-corner-all btn btn--primary btn--medium " href="#nearest-event-page">
+                <i class="fa fa-map-marker fa-2x"></i>
+                View Events near me</a>
+            </div>
+
         </div>
 
 
@@ -77,6 +76,71 @@
     
     </div>
 
+
+
+    <div data-role="page" id="nearest-event-page" data-add-back-btn="true">
+            <div data-role="header">
+                <h1 style="width: auto"> 
+                    <a class="site-logo" href="index.html" style="width:100%">
+                        <img src="../images/logo_text.png" alt="Homepage" style="width: 100%">
+                    </a>
+                </h1>
+                <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div role="main" class="ui-content">
+                <div class="article">
+                    <h2 class="cen">Nearest Events Around Me</h2>
+
+                    <div id="map" style="height: 300px; width:100%"></div>
+
+                </div> 
+            </div>
+
+            <!--Menu-->
+    </div>
+
+
+    <div data-role="page" id="event-detail-page" data-add-back-btn="true">
+            <div data-role="header">
+                <h1 style="width: auto"> 
+                    <a class="site-logo" href="index.html" style="width:100%">
+                        <img src="../images/logo_text.png" alt="Homepage" style="width: 100%">
+                    </a>
+                </h1>
+                <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+            </div>
+            <div role="main" class="ui-content">
+                <div class="article ui-responsive">
+                    <div class="ui-grid-solo" >
+                        <h2>Paul Gaultier Spring Collection</h2>               
+                    </div>
+            
+                    <div class="ui-grid-solo">
+                        <div class="ui-block-a">
+                            <img height="100" class="pull-left" alt="Paul-Gaultier-Spring-Collection" src="images/gallery/Spring_5.jpg"></a>
+                        </div>
+                        <div class="ui-block-a">
+                            <p>Jean-Paul Gaultier’s new collection is exactly that – a couture in a literal sense. It is clearly inspired by the 40s, sometimes bright and flowery, but always with the designer’s special flair</p>
+                            <div class="ui-grid-b">
+                                <div class="ui-grid-a"><b>Date :</b>  01/20/2019 </div>
+                                <div class="ui-grid-b"><b>Time :</b>  18:00 GMT </div>
+                                <div class="ui-grid-c"><b>Venue :</b>  TNX Studio </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-grid-solo">
+                        <a class="ui-btn ui-corner-all btn btn--primary btn--medium" href="#booking">
+                            Buy Tickets</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!--Menu-->
+    </div>
+
+    
     <script>
         mobiscroll.settings = {
             theme: 'ios',
