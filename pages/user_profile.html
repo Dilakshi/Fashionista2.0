@@ -14,9 +14,9 @@
     <!-- CSS
     ================================================== -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fashionista.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/fashionista.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     
@@ -27,8 +27,8 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     
     <!-- Mobiscroll JS and CSS Includes -->
-    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
-    <script src="js/mobiscroll.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/mobiscroll.jquery.min.css">
+    <script src="../js/mobiscroll.jquery.min.js"></script>
 
 </head>
 
@@ -76,52 +76,65 @@
                 <p style="float:left;width: 100%;">Your Favourites</p>
             </hr>
                 <ul data-role="listview" data-inset="true">
-                        <li data-role="list-divider">Events</li>
-                        <li data-role="list-divider">Designers</li>
-                        <li data-role="list-divider">Fashion Icons</li>
-                    </ul>
-                </div>
+                    <li data-role="list-divider">Events
+                        <ul data-role="listview" data-inset="true">
+                            <li data-role="list-divider">London Fashion Week - 2019</li>
+                            <li data-role="list-divider">Elite's Summer Collection</li>
+                            <li data-role="list-divider">Paris Runnerway</li>
+                        </ul>
+                    </li>
+                    <li data-role="list-divider">Designers
+                        <ul data-role="listview" data-inset="true">
+                            <li data-role="list-divider">Tim Samual</li>
+                            <li data-role="list-divider">Babara Tharif</li>
+                        </ul>
+                    </li>
+                    <li data-role="list-divider">Fashion Icons</li>
+                </ul>
+            </div>
 
         </div> <!-- end blog-content -->
 
     </div> <!-- end blog-content-wrap -->
-
-
-       <!-- Menu-->
-       <div data-role="panel" id="left-panel" style="background-color:#062151;">
-            <ul data-role="listview">
-                <li data-icon="delete">
-                    <a style="background-color:#062151;color: white;" href="#" data-rel="close">FASHIONISTA</a></li>
-                <li data-icon="calendar">
-                    <a  style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Events</a></li>
-                <li data-icon="shop">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Products</a></li>
-                <li data-icon="tag">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Sponsers</a></li>
-                <li data-icon="info">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">FAQ</a></li>
-                
-                <li data-role="list-divider" style="color:#062151;background-color: white;">About</li>
-                <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="pages/ourteam.html" data-rel="back">Who we are</a></li>
-                <li data-icon="phone">
-                    <a style="background-color:#062151;color: white;"  href="pages/contactus.html" data-rel="back">Contact Us</a></li>
-                
-                <li data-role="list-divider" style="color:#062151;background-color: white;">My Account</li>
-                <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Login / Signup</a></li>
-                <li data-role="collapsible" data-inset="false" data-iconpos="right" >
-                    <h3 style="color:#062151;background-color: white;">Favourites</h3>
-                    <ul data-role="listview">
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Designers</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Products</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Events</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    
-    </div>
+ 
+        <!-- Menu-->
+        <div data-role="panel" id="left-panel" class="darkbg">
+                <ul data-role="listview">
+                    <li data-icon="delete">
+                        <a class="darkbg" href="../index.html">FASHIONISTA</a></li>
+                    <li data-icon="calendar">
+                        <a class="darkbg" href="event.html">Events</a></li>
+                    <li data-icon="shop">
+                        <a class="darkbg" href="products.html">Products</a></li>
+                    <li data-icon="tag">
+                        <a class="darkbg" href="sponsers.html">Sponsers</a></li>
+                    <li data-icon="info">
+                        <a class="darkbg" href="#">FAQ</a></li>
+                    
+                    <li data-role="list-divider">About</li>
+                    <li data-icon="user">
+                        <a class="darkbg"  href="ourteam.html">Who we are</a></li>
+                    <li data-icon="phone">
+                        <a class="darkbg"  href="contactus.html">Contact Us</a></li>
+                    
+                    <li data-role="list-divider">My Account</li>
+                    <li data-icon="user">
+                        <a class="darkbg"  href="sign_in.html">Login / Signup</a></li>
+                    <li data-role="collapsible" data-inset="false" data-iconpos="right" class="darkbg">
+                        <h3 class="darkbg">Favourites</h3>
+                        <ul data-role="listview">
+                            <li><a href="#" class="darkbg">My Designers</a></li>
+                            <li><a href="#" class="darkbg">My Products</a></li>
+                            <li><a href="#" class="darkbg">My Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>     
+            <div data-role="footer" class="darkbg"> 
+                <h4>© tEaM FlAshMoB</h4> 
+            </div>          
+        </div>   
+    </body>
 
     <script>
         mobiscroll.settings = {
@@ -144,5 +157,4 @@
         
         });
     </script>
-
-</body>
+</html>
