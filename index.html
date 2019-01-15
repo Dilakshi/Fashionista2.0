@@ -33,8 +33,8 @@
 
 <body>
     <div data-role="page" id="demo-page" data-url="demo-page">
-        <div data-role="header" style="background-color:#062151;">
-            <h1 style="width: auto;"> 
+        <div data-role="header">
+            <h1 style="width: auto"> 
                 <a class="site-logo" href="index.html" style="width:100%">
                     <img src="images/logo_text.png" alt="Homepage" style="width: 100%">
                 </a>
@@ -44,15 +44,15 @@
         <div role="main" class="ui-content">
             <div class="ui-grid-solo">
                 <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all menubtn" 
-                    href="test.html" data-transition="slide">News Feeds</a>
+                    href="pages/test.html" data-transition="slide">News Feeds</a>
                 </div>
             </div>
             <div class="ui-grid-a">
                 <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all menubtn" 
-                    href="event.html">Events</a>
+                    href="pages/event.html" rel="external">Events</a>
                 </div>
                 <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all menubtn" 
-                    href="designer_list.html">Designers</a>
+                    href="pages/designer.html">Designers</a>
                 </div>
             </div>
             <div class="ui-grid-solo">
@@ -63,41 +63,37 @@
                 <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all menubtn"
                     href="fashion_icons.html">Fashion Icons</a></div>
                 <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all menubtn"
-                    href="sponsers.html">Sponsers</a></div>
+                    href="pages/sponsers.html">Sponsers</a></div>
                 <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all menubtn"
                     href="ourteam.html">Who we are</a></div>
             </div>
         </div>
 
         <!-- Menu-->
-        <div data-role="panel" id="left-panel" style="background-color:#062151;">
+        <div data-role="panel" id="left-panel">
             <ul data-role="listview">
-                <li data-icon="delete">
-                    <a style="background-color:#062151;color: white;" href="#" data-rel="close">FASHIONISTA</a></li>
-                <li data-icon="calendar">
-                    <a  style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Events</a></li>
-                <li data-icon="shop">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Products</a></li>
-                <li data-icon="tag">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Sponsers</a></li>
-                <li data-icon="info">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">FAQ</a></li>
+                <li data-icon="delete"><a href="#" data-rel="close" style="height:20"></a></li>
+                <!-- <li data-icon="back"><a href="#demo-intro" data-rel="back">Demo intro</a></li> -->
+                <li data-icon="calendar"><a href="#demo-intro" data-rel="back">Events</a></li>
+                <!-- <li data-icon="camera"><a href="#demo-intro" data-rel="back">Gallery</a></li>
+                <li data-icon="bullets"><a href="#demo-intro" data-rel="back">Designers</a></li>
+                <li data-icon="bars"><a href="#demo-intro" data-rel="back">News Feed</a></li> -->
+                <li data-icon="shop"><a href="#demo-intro" data-rel="back">Products</a></li>
+                <li data-icon="tag"><a href="#demo-intro" data-rel="back">Sponsers</a></li>
+                <li data-icon="info"><a href="#demo-intro" data-rel="back">FAQ</a></li>
                 
-                <li data-role="list-divider" style="color:#062151;background-color: white;">About</li>
-                <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="pages/ourteam.html" data-rel="back">Who we are</a></li>
-                <li data-icon="phone">
-                    <a style="background-color:#062151;color: white;"  href="pages/contactus.html" data-rel="back">Contact Us</a></li>
+                <li data-role="list-divider">About</li>
+                <li data-icon="user"><a href="pages/ourteam.html" data-rel="back">Who we are</a></li>
+                <li data-icon="phone"><a href="pages/contactus.html" data-rel="back">Contact Us</a></li>
                 
-                <li data-role="list-divider" style="color:#062151;background-color: white;">My Account</li>
-                <li data-icon="user">
-                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Login / Signup</a></li>
-                <li data-role="collapsible" data-inset="false" data-iconpos="right" >
-                    <h3 style="color:#062151;background-color: white;">Favourites</h3>
+                <li data-role="list-divider">My Account</li>
+                <li data-icon="user"><a href="#demo-intro" data-rel="back">Login / Signup</a></li>
+                <li data-role="collapsible" data-inset="false" data-iconpos="right">
+                    <h3>Favourites</h3>
                     <ul data-role="listview">
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Designers</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Products</a></li>
-                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Events</a></li>
+                        <li><a href="#">My Designers</a></li>
+                        <li><a href="#">My Products</a></li>
+                        <li><a href="#">My Events</a></li>
                     </ul>
                 </li>
             </ul>
