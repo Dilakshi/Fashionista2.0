@@ -1,141 +1,88 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-	<title>SignUp - Fashionista</title>
+	<title>SignIn - Fashionista</title>
 
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fashionista.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <script src="js/mobiscroll.jquery.min.js"></script>
 
 </head>
 
-<body id="top">
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-
-
-    <!-- header 
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo_text.png" alt="Homepage" style="height:100px">
-            </a>
+<body>
+    <div data-role="page" id="event-calendar-page" >
+        <div data-role="header" style="background-color:#062151;">
+            <h1 style="width: auto"> 
+                <a class="site-logo" href="index.html" style="width:100%">
+                    <img src="../images/logo_text.png" alt="Homepage" style="width: 100%">
+                </a>
+            </h1>
+            <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
         </div>
-
-        <nav class="row header-nav-wrap wide">
-            <ul class="header-main-nav">
-                <li><a class="smoothscroll" href="event_calendar.html" title="events">Book an event</a></li>
-                <li><a class="smoothscroll" href="" title="features">Gallery</a></li>
-                <li><a class="smoothscroll" href="designer_list.html" title="pricing">Designers</a></li>
-                <li><a class="smoothscroll" href="" title="pricing">Products</a></li>
-                <li><a class="smoothscroll" href="" title="pricing">-game-</a></li>
-                <li><a class="smoothscroll" href="" title="events">My Account</a></li>
-                
-                <li><a class="smoothscroll" href="" title="about">Who we are</a></li>
-                <li><a href="blog.html" title="blog">Blog</a></li>	
-            </ul>
-
-            <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
-    
-    </header> <!-- end header -->
-
-
-
-    <!-- page header
-    ================================================== -->
-    <!-- <div class="page-header page-header--single" style="background-image:url(images/blog/blog-bg-01.jpg)">
-
-        <div class="row page-header__content">
-            <h1 class="display-1">
-                Event Calendar.
-            </h1>               
-        </div>
-
-    </div> -->
-        
-
-    <!-- blog content
-    ================================================== -->
-    <div class="blog-content-wrap">
-        
-        <div class="row page-header__content page-header--small" >
-            <h1 class="display-1">
-                Sign Up
-               </h1>             
-        </div>
-
-        <div class="row blog-content">
-
-            <!--user logo 
-            <div id="userlogo" style="text-align:center;">
-                <img src="..//Fashionista1.0/images/user_logo.png" alt="" width="50%" height="auto"/>                    
-            </div>-->
-
-            <!-- user login form -->
+        <div role="main" class="ui-content">
+            <div class="article" style="text-align: center;">
+                <h1 class="display-1">
+                    Sign Up
+                </h1>
+            </div>
+            <div class="row blog-content">
             <div class="row page-header--small">
                 <div class="col-full">
-                        <form class="modal-content">
-                            <div class="container">
-                                <p>Please fill in this form to create an account.</p>
-                                <hr>
-                                <label for="email"><b>Email</b></label>
-                                <input style="width: 100%" type="text" placeholder="Enter Email" name="email" required>
-                                
-                                <label for="psw"><b>Password</b></label>
-                                <input style="width: 100%" type="password" placeholder="Enter Password" name="psw" required>
+                    <form class="modal-content">
+                        <div class="container">
+                            <p>Please fill in this form to create an account.</p>
+                            <hr>
+                            <label for="email"><b>Email</b></label>
+                            <input style="width: 100%" type="text" placeholder="Enter Email" name="email" required>
                             
-                                <label for="psw-repeat"><b>Repeat Password</b></label>
-                                <input style="width: 100%" type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                                
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-                                </label>
+                            <label for="psw"><b>Password</b></label>
+                            <input style="width: 100%" type="password" placeholder="Enter Password" name="psw" required>
+                        
+                            <label for="psw-repeat"><b>Repeat Password</b></label>
+                            <input style="width: 100%" type="password" placeholder="Repeat Password" name="psw-repeat" required>
                             
-                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-                            
-                                <div class="clearfix">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                                    <button type="submit" class="signupbtn">Sign Up</button>
-                                </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                            </label>
+                        
+                            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                            <fieldset class="ui-grid-a">
+                                <div class="ui-block-a"><input type="submit" value="Submit" data-theme="a"></div>
+                                <div class="ui-block-b"><input type="reset" value="Reset" data-theme="b"></div>
+                            </fieldset>
 
-                                <p>Sign Up or Sign In with one of your existing account.</p>
-                                <div>
-                                    
-                                    <a href="https://www.facebook.com/" data-role="button"><img src="../Fashionista1.0/images/facebook_icon.png" /></a>
-                                    <a href="https://www.instagram.com/" data-role="button"><img src="../Fashionista1.0/images/instagram_icon.png" /></a>
-                                    <a href="https://twitter.com" data-role="button"><img src="../Fashionista1.0/images/twitter_icon.png" /></a>
-                                    <a href="https://www.pinterest.com/" data-role="button"><img src="../Fashionista1.0/images/pinterest_icon.png" /></a>
-                                    <a href="https://plus.google.com/" data-role="button"><img src="../Fashionista1.0/images/google_plus_icon.png" /></a>
-                                    
-                                  </div>
-                            </div>
-                        </form>         
+                            <p>Sign Up or Sign In with one of your existing account.</p>
+                            <div class="ui-grid-d">
+                                <div class="ui-block-a" data-role="button"><img src="../images/facebook_icon.png"/></div>
+                                <div class="ui-block-b" data-role="button"><img src="../images/instagram_icon.png"/></div>
+                                <div class="ui-block-c" data-role="button"><img src="../images/twitter_icon.png"/></div>
+                                <div class="ui-block-d" data-role="button"><img src="../images/pinterest_icon.png"/></div>
+                                <div class="ui-block-e" data-role="button"><img src="../images/google_plus_icon.png"/></div>
+                            </div><!-- /grid-c -->
+                        </div>
+                    </form>         
                 </div>
             </div>
 
@@ -144,80 +91,62 @@
     </div> <!-- end blog-content-wrap -->
 
 
-
-
-    <!-- footer
-    ================================================== -->
-    <footer class="s-footer footer">
-
-        <div class="row footer__top">
-            <div class="col-six md-full">
-                <h1 class="display-2">
-                    Let's Stay In Touch.
-                </h1>
-                <p class="lead">
-                    Subscribe for updates, special offers and more.
-                </p>
-            </div>
-            <div class="col-six md-full footer__subscribe end">
-                <div class="subscribe-form">
-                    <form id="mc-form" class="group" novalidate="true">
-
-                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
-            
-                        <input type="submit" name="subscribe" value="Sign Up">
-            
-                        <label for="mc-email" class="subscribe-message"></label>
-            
-                    </form>
-                </div>
-            </div>
-        </div> <!-- end footer__top -->
-
-        <div class="row footer__bottom">
-            
-            <div class="col-six tab-full end">
-                <!-- <ul class="footer__site-links">
-                    <li><a href="index.html#home" title="intro">Intro</a></li>
-                    <li><a href="index.html#about" title="about">About</a></li>
-                    <li><a href="index.html#features" title="features">Features</a></li>
-                    <li><a href="index.html#pricing" title="pricing">Pricing</a></li>
-                    <li><a href="blog.html" title="blog">Blog</a></li>	
-                </ul> -->
-
-                <p class="footer__contact">
-                    Do you have a question? Send us a word: <br>
-                    <a href="mailto:#0" class="footer__mail-link">support@standout.com</a>
-                </p>
-
-                <ul class="footer__social">
-                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                </ul>
-
-                <div class="cl-copyright">
-                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
-                </span>
-                </div>
-            </div>
-
-        </div> <!-- end footer__bottom -->
-
-        <div class="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+       <!-- Menu-->
+       <div data-role="panel" id="left-panel" style="background-color:#062151;">
+            <ul data-role="listview">
+                <li data-icon="delete">
+                    <a style="background-color:#062151;color: white;" href="#" data-rel="close">FASHIONISTA</a></li>
+                <li data-icon="calendar">
+                    <a  style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Events</a></li>
+                <li data-icon="shop">
+                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Products</a></li>
+                <li data-icon="tag">
+                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Sponsers</a></li>
+                <li data-icon="info">
+                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">FAQ</a></li>
+                
+                <li data-role="list-divider" style="color:#062151;background-color: white;">About</li>
+                <li data-icon="user">
+                    <a style="background-color:#062151;color: white;"  href="pages/ourteam.html" data-rel="back">Who we are</a></li>
+                <li data-icon="phone">
+                    <a style="background-color:#062151;color: white;"  href="pages/contactus.html" data-rel="back">Contact Us</a></li>
+                
+                <li data-role="list-divider" style="color:#062151;background-color: white;">My Account</li>
+                <li data-icon="user">
+                    <a style="background-color:#062151;color: white;"  href="#demo-intro" data-rel="back">Login / Signup</a></li>
+                <li data-role="collapsible" data-inset="false" data-iconpos="right" >
+                    <h3 style="color:#062151;background-color: white;">Favourites</h3>
+                    <ul data-role="listview">
+                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Designers</a></li>
+                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Products</a></li>
+                        <li><a href="#" style="background-color:#062151;color: white;font-size: 9pt">My Events</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+    
+    </div>
 
-    </footer> <!-- end s-footer -->
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
- 
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
- 
+    <script>
+        mobiscroll.settings = {
+            theme: 'ios',
+            lang: 'en'
+        };
+    
+        $(function () {
+        
+            var inst = $('#demo-event-popover').mobiscroll().eventcalendar({
+                lang: 'en',  // Specify language like: lang: 'pl' or omit setting to use default
+                theme: 'ios-dark',              // Specify theme like: theme: 'ios' or omit setting to use default
+                display: 'inline',          // Specify display mode like: display: 'bottom' or omit setting to use default
+                touchUi: true
+            }).mobiscroll('getInst');
+        
+            mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', function (events) {
+                inst.setEvents(events);
+            }, 'jsonp');
+        
+        });
+    </script>
 
 </body>
