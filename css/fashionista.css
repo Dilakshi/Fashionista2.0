@@ -68,3 +68,8 @@
     background-color:#011931;
     color:#ffffff;
 }
+
+.darkbg{
+    background-color:#011931 !important;
+    color:#ffffff !important;
+}
