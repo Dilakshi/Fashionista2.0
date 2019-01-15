@@ -2,3 +2,9 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.mbsc-page * {
+    box-sizing: unset;
+    border-radius: 15px;
+}
+
