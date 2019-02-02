@@ -64,6 +64,13 @@
     background-color:white;
 }
 
+.ui-page-theme-a .ui-btn {
+    background-color: #f6f6f6;
+    border-color: #ddd;
+    color: #333;
+    text-shadow: 0 0px 0 #000000;
+}
+
 .darkbg{
     background-color:#011931;
     color:#ffffff;
@@ -77,4 +84,24 @@
 .darkbg{
     background-color:#011931 !important;
     color:#ffffff !important;
+}
+
+.highlight{
+	background-color:#ff8400  !important;
+	color:#ffffff  !important;
+}
+.maincolor1{
+	background-color:#9B723C  !important;
+}
+
+.maincolor2{
+	background-color:#BBC9DF !important;
+}
+
+.maincolor3{
+	background-color:#C8AE99 !important;
+}
+
+.maincolor4{
+	background-color:#A37F8C !important;
 }
