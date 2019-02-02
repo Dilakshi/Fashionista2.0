@@ -91,17 +91,25 @@
 	color:#ffffff  !important;
 }
 .maincolor1{
-	background-color:#9B723C  !important;
+    background-color:#9B723C  !important;
+    border: none !important;
+    opacity: 0.9 !important;
 }
 
 .maincolor2{
 	background-color:#BBC9DF !important;
+    border: none !important;
+    border: none !important;
 }
 
 .maincolor3{
 	background-color:#C8AE99 !important;
+    border: none !important;
+    border: none !important;
 }
 
 .maincolor4{
 	background-color:#A37F8C !important;
+    border: none !important;
+    border: none !important;
 }
